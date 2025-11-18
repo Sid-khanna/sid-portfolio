@@ -161,9 +161,10 @@ export default function StoryStudioPage() {
             </ul>
           </div>
 
+
           <div className="rounded-2xl border border-neutral-200 bg-white p-4 text-sm text-neutral-800 shadow-sm space-y-3">
             <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
-              Repos &amp; versions
+              Repos & versions
             </h2>
             <div className="flex flex-wrap gap-2">
               <a
@@ -184,9 +185,8 @@ export default function StoryStudioPage() {
               </a>
             </div>
             <p className="text-xs text-neutral-500">
-              The new repo is where I&apos;m experimenting with better UX,
-              modular prompts, and more advanced story modes as the project
-              evolves.
+              The live v1 version is available at  
+              <a href="https://ai-story-odpj.onrender.com/" target="_blank" rel="noreferrer" className="underline hover:text-neutral-700">https://ai-story-odpj.onrender.com/</a>
             </p>
           </div>
         </div>
