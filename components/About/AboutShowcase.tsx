@@ -7,12 +7,26 @@ import { motion, AnimatePresence } from "framer-motion";
 type Shot = { title: string; tag?: string; src: string; href?: string };
 
 const SHOTS: Shot[] = [
-  { title: "World Solar Challenge", tag: "Hardware",  src: "/images/work/wsc-finish.jpg", href: "/projects?tab=work" },
-  { title: "ParSight (drone)",      tag: "Robotics",  src: "/images/work/drone-parsight.png", href: "/projects/parsight" },
-  { title: "RSX Rover",             tag: "Robotics",  src: "/images/work/rover-rsx.jpg" },
-  { title: "Scuba",                 tag: "Life",      src: "/images/life/scuba.jpg" },
-  { title: "Kayaking",              tag: "Life",      src: "/images/life/kayak.jpg" },
-  { title: "Vinyl Nights",          tag: "Creative",  src: "/images/life/vinyl.jpg" },
+  {
+    title: "World Solar Challenge",
+    tag: "Hardware",
+    src: "/images/work/wsc-finish.jpg",
+    href: "/projects?tab=work",
+  },
+  {
+    title: "ParSight (drone)",
+    tag: "Robotics",
+    src: "/images/work/drone-parsight.png",
+    href: "/projects/parsight",
+  },
+  {
+    title: "RSX Rover",
+    tag: "Robotics",
+    src: "/images/work/rover-rsx.jpg",
+  },
+  { title: "Scuba", tag: "Life", src: "/images/life/scuba.jpg" },
+  { title: "Kayaking", tag: "Life", src: "/images/life/kayak.jpg" },
+  { title: "Vinyl Nights", tag: "Creative", src: "/images/life/vinyl.jpg" },
 ];
 
 export default function AboutShowcase() {
@@ -31,7 +45,10 @@ export default function AboutShowcase() {
 
   return (
     <div
-      className="relative h-full min-h-[26rem] rounded-2xl border border-neutral-200 bg-white/70 shadow-sm overflow-hidden flex flex-col justify-end" 
+      className="relative 
+                 h-[14rem] sm:h-[18rem] md:h-full md:min-h-[26rem]
+                 rounded-2xl border border-neutral-200 bg-white/70 shadow-sm 
+                 overflow-hidden flex flex-col justify-end"
       onMouseEnter={() => (paused.current = true)}
       onMouseLeave={() => (paused.current = false)}
     >
@@ -39,7 +56,7 @@ export default function AboutShowcase() {
         <AnimatePresence initial={false}>
           <motion.div
             key={current.src}
-            initial={{ opacity: 0.0, scale: 1.02 }}
+            initial={{ opacity: 0, scale: 1.02 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.01 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -47,40 +64,56 @@ export default function AboutShowcase() {
           >
             {current.href ? (
               <a href={current.href} className="absolute inset-0">
-                <Image src={current.src} alt={current.title} fill className="object-cover" />
+                <Image
+                  src={current.src}
+                  alt={current.title}
+                  fill
+                  className="object-cover"
+                />
               </a>
             ) : (
-              <Image src={current.src} alt={current.title} fill className="object-cover" />
+              <Image
+                src={current.src}
+                alt={current.title}
+                fill
+                className="object-cover"
+              />
             )}
           </motion.div>
         </AnimatePresence>
+
         {/* gradient for readable text */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
       </div>
 
-      {/* caption */}
-      <div className="relative z-10 flex flex-col justify-end h-full p-4">
+      {/* caption + thumbnails */}
+      <div className="relative z-10 flex flex-col justify-end h-full p-3 sm:p-4">
         <div className="flex items-center gap-2">
           {current.tag && (
-            <span className="text-[11px] px-2 py-1 rounded-full bg-white/90 border border-neutral-200">
+            <span className="text-[10px] sm:text-[11px] px-2 py-1 rounded-full bg-white/90 border border-neutral-200">
               {current.tag}
             </span>
           )}
-          <h3 className="text-white drop-shadow text-base font-semibold">{current.title}</h3>
+          <h3 className="text-white drop-shadow text-sm sm:text-base font-semibold">
+            {current.title}
+          </h3>
         </div>
 
-        {/* thumbnails / scrubbing */}
         <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
           {SHOTS.map((s, idx) => (
             <button
               key={s.src}
               onClick={() => setI(idx)}
-              className={`relative h-10 w-16 shrink-0 rounded-md overflow-hidden border ${idx === i ? "border-white" : "border-white/50"} focus:outline-none`}
+              className={`relative h-9 w-14 sm:h-10 sm:w-16 shrink-0 rounded-md overflow-hidden border ${
+                idx === i ? "border-white" : "border-white/50"
+              } focus:outline-none`}
               aria-label={`Show ${s.title}`}
               title={s.title}
             >
               <Image src={s.src} alt="" fill className="object-cover" />
-              {idx === i && <span className="absolute inset-0 ring-2 ring-white/80 rounded-md pointer-events-none" />}
+              {idx === i && (
+                <span className="absolute inset-0 ring-2 ring-white/80 rounded-md pointer-events-none" />
+              )}
             </button>
           ))}
         </div>
