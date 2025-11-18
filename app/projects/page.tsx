@@ -142,17 +142,17 @@ const PROJECTS: Project[] = [
     topics: ["Extra Curriculum"],
   },
   {
-    title: "CAD automation — Mold-Masters",
-    slug: "cad-automation",
-    category: "Design & Manufacturing",
-    tag: "Industry · Automation · CAD",
-    period: "2023–Now",
-    summary:
-      "Automated repetitive CAD workflows and migration scripts, accelerating design work and reducing manual error in production tooling.",
-    tech: "VB.NET · Creo · SmartAssembly · SQL",
-    internalHref: "/projects?tab=work",
-    image: "/images/work/cad-automation-placeholder.jpg",
-    topics: ["Industry"],
+  title: "CAD automation — Mold-Masters",
+  slug: "cad-automation",
+  category: "Design & Manufacturing",
+  tag: "Industry · Automation · CAD",
+  period: "2023–Now",
+  summary:
+    "Automated repetitive CAD workflows and migration scripts, accelerating design work and reducing manual error in production tooling.",
+  tech: "VB.NET · Creo · SmartAssembly · SQL",
+  internalHref: "/projects/cad-automation",
+  image: "/images/work/cad-automation-placeholder.jpg",
+  topics: ["Industry"],
   },
   {
     title: "Dynamic Solar Windows — AP2D & 3ENano",
