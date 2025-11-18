@@ -5,7 +5,7 @@ import AboutShowcase from "./AboutShowcase";
 export default function AboutSection() {
   return (
     <section className="py-12 sm:py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 grid gap-10 md:grid-cols-5 items-start">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 gap-10 md:grid-cols-5 items-start">
         {/* LEFT: plain text */}
         <div className="md:col-span-2">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4">
