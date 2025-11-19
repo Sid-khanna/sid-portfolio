@@ -22,7 +22,12 @@ export default function Hero() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/projects" className="rounded-xl bg-white text-black px-4 py-2 text-sm font-medium hover:bg-white/90">See projects</Link>
             <a href="mailto:siddharth.khanna1@gmail.com" className="rounded-xl border border-white/60 text-white px-4 py-2 text-sm hover:bg-white/10">Email me</a>
-            <a href="/resume.pdf" className="rounded-xl border border-white/60 text-white px-4 py-2 text-sm hover:bg-white/10">Resume</a>
+            <a
+              href="/files/Siddharth_Khanna_Resume.pdf"
+              className="rounded-xl border border-white/60 text-white px-4 py-2 text-sm hover:bg-white/10"
+            >
+              Resume
+            </a>
           </div>
         </div>
       </div>
