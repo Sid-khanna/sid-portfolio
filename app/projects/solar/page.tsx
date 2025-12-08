@@ -114,12 +114,12 @@ export default function BlueSkySolarPage() {
               fill
               className="object-cover"
             />
-          </div>
+          </div>s
 
           {/* TODO: swap this path for a real manufacturing / layup photo if you like */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
             <Image
-              src="/images/work/wsc-layup.jpg"
+              src="/images/work/wsc-layup.jpeg"
               alt="Composite layup and mold work for the solar car"
               fill
               className="object-cover"
