@@ -14,7 +14,7 @@ const SLIDES: Slide[] = [
   },
   {
     title: "CAD Automation — Mold-Masters",
-    src: "/images/work/cad-automation-placeholder.jpg",   // replace later
+    src: "/images/work/mm-logo.png",   
     href: "/projects?tab=work",
     tag: "Automation",
   },
