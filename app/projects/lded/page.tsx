@@ -13,63 +13,62 @@ export default function LdedPage() {
       intro={
         <p>
           For my undergraduate thesis I joined the Laboratory for Extreme
-          Mechanics &amp; Additive Manufacturing, where I worked on
-          optimizing Laser Directed Energy Deposition (LDED) using
-          high-speed infrared imaging and machine learning. My work focused
-          on building a high-throughput experimental pipeline and regression
-          models to relate melt pool stability and surface features to print
-          quality.
+          Mechanics &amp; Additive Manufacturing, where I worked on optimizing
+          Laser Directed Energy Deposition (LDED) using high-speed infrared
+          imaging and machine learning. My work focused on building a
+          high-throughput experimental pipeline and regression models to relate
+          melt pool stability and surface features to print quality.
         </p>
       }
       snapshot={
         <ul className="space-y-1.5 text-xs md:text-sm text-neutral-700">
           <li>
-            <span className="font-medium">Process:</span> Laser Directed
-            Energy Deposition (LDED) with high-speed IR monitoring
+            <span className="font-medium">Process:</span> Laser Directed Energy
+            Deposition (LDED) with high-speed IR monitoring
           </li>
           <li>
             <span className="font-medium">Design space:</span> 360+ unique
             combinations of laser power, scan speed, and feed rate
           </li>
           <li>
-            <span className="font-medium">Features:</span> melt pool
-            stability, morphology, sputter density + geometric track metrics
+            <span className="font-medium">Features:</span> melt pool stability,
+            morphology, sputter density + geometric track metrics
           </li>
           <li>
-            <span className="font-medium">Models:</span> linear regression,
-            tree ensembles, and neural networks for quality prediction
+            <span className="font-medium">Models:</span> linear regression, tree
+            ensembles, and neural networks for quality prediction
           </li>
         </ul>
       }
     >
-      {/* overview + images (poster-style) */}
+      {/* overview + images */}
       <section className="grid gap-8 lg:grid-cols-[1.6fr,1.4fr] items-start">
         <div className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
           <h2 className="text-lg font-semibold tracking-tight">
             Motivation &amp; approach
           </h2>
           <p>
-            LDED enables the fabrication and repair of complex, high-value
-            metal components, but the melt pool is highly dynamic and prone
-            to defects if the process is not well controlled. Traditional
-            post-process metrics like track height and surface roughness
-            don&apos;t fully capture these transient instabilities.
+            LDED enables the fabrication and repair of complex, high-value metal
+            components, but the melt pool is highly dynamic and prone to defects
+            if the process is not well controlled. Traditional post-process
+            metrics like track height and surface roughness don&apos;t fully
+            capture these transient instabilities.
           </p>
           <p>
             To address this, I helped design a{" "}
             <span className="font-medium">high-throughput experiment</span>{" "}
-            matrix that systematically varied laser power, scan speed and
-            powder feed rate. For each track, a high-speed IR camera logged
-            melt pool evolution at kilo-hertz rates while 3D scans captured
-            final geometry, giving us both in-situ and post-process views of
-            print behaviour.
+            matrix that systematically varied laser power, scan speed and powder
+            feed rate. For each track, a high-speed IR camera logged melt pool
+            evolution at kilo-hertz rates while 3D scans captured final
+            geometry, giving us both in-situ and post-process views of print
+            behaviour.
           </p>
           <p>
-            From this dataset, we extracted dynamic features such as melt
-            pool stability, morphology, and sputter activity, and combined
-            them with static geometric features. These became inputs to
-            regression models that predict print quality and highlight
-            process regions that are more robust.
+            From this dataset, we extracted dynamic features such as melt pool
+            stability, morphology, and sputter activity, and combined them with
+            static geometric features. These became inputs to regression models
+            that predict print quality and highlight process regions that are
+            more robust.
           </p>
         </div>
 
@@ -84,7 +83,7 @@ export default function LdedPage() {
               priority
             />
           </div>
-        
+
           {/* thesis visuals */}
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
@@ -95,7 +94,7 @@ export default function LdedPage() {
                 className="object-contain max-h-[40vh]"
               />
             </div>
-        
+
             <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
               <Image
                 src="/images/projects/thesis-2.png"
@@ -106,8 +105,7 @@ export default function LdedPage() {
             </div>
           </div>
         </div>
-
-
+      </section>
 
       {/* modelling + findings */}
       <section className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
@@ -115,19 +113,19 @@ export default function LdedPage() {
           Modelling &amp; key findings
         </h2>
         <p>
-          I implemented a regression pipeline comparing linear models,
-          decision trees, extra-trees ensembles, and feed-forward neural
-          networks to predict melt track height, melt pool area, a stability
-          metric, and a combined stability + surface roughness score.
+          I implemented a regression pipeline comparing linear models, decision
+          trees, extra-trees ensembles, and feed-forward neural networks to
+          predict melt track height, melt pool area, a stability metric, and a
+          combined stability + surface roughness score.
         </p>
         <p>
           A consistent result was that{" "}
           <span className="font-medium">melt pool stability</span>—captured
           through steady-state duration and variability—was a far stronger
-          predictor of print quality than morphology or sputter density
-          alone. Models that fused stability with geometric features
-          achieved the best performance, highlighting the value of combining
-          in-situ and post-process information for monitoring and control.
+          predictor of print quality than morphology or sputter density alone.
+          Models that fused stability with geometric features achieved the best
+          performance, highlighting the value of combining in-situ and
+          post-process information for monitoring and control.
         </p>
       </section>
 
@@ -138,11 +136,11 @@ export default function LdedPage() {
         </h2>
 
         <p>
-          I joined the lab as an undergraduate thesis student and contributed
-          to a larger PhD-led research project on melt pool morphology and
-          process stability in LDED. Being involved in the experiments and
-          analysis behind that work was a great learning experience and a
-          meaningful part of my thesis journey.
+          I joined the lab as an undergraduate thesis student and contributed to
+          a larger PhD-led research project on melt pool morphology and process
+          stability in LDED. Being involved in the experiments and analysis
+          behind that work was a great learning experience and a meaningful part
+          of my thesis journey.
         </p>
 
         <div className="grid gap-4 md:grid-cols-2">
@@ -158,10 +156,10 @@ export default function LdedPage() {
               in 2025, led by the PhD student heading the project.
             </p>
             <p className="text-xs text-neutral-600 mb-3">
-              “Mechanism and quantification of melt pool morphology evolution
-              in laser directed energy deposition,”{" "}
-              <span className="italic">J. Manuf. Processes</span>, 2025.{" "}
-              DOI: 10.1016/j.jmapro.2025.10.097
+              “Mechanism and quantification of melt pool morphology evolution in
+              laser directed energy deposition,”{" "}
+              <span className="italic">J. Manuf. Processes</span>, 2025. DOI:
+              10.1016/j.jmapro.2025.10.097
             </p>
             <a
               href="https://doi.org/10.1016/j.jmapro.2025.10.097"
@@ -181,8 +179,8 @@ export default function LdedPage() {
             <p className="mb-2">
               My thesis,{" "}
               <span className="font-medium">
-                “Optimization of Laser Directed Energy Deposition (LDED)
-                Additive Manufacturing Process with High-Speed IR cameras”
+                “Optimization of Laser Directed Energy Deposition (LDED) Additive
+                Manufacturing Process with High-Speed IR cameras”
               </span>
               , builds a high-throughput IR monitoring framework and regression
               models to predict print quality from combined dynamic and static
