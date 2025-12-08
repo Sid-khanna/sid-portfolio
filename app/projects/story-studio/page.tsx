@@ -79,7 +79,7 @@ export default function StoryStudioPage() {
         <div className="space-y-4">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
             <Image
-              src="/images/work/story-studio-placeholder.jpg"
+              src="/images/work/story-studio-1.jpg"
               alt="AI Story Studio character and story output"
               fill
               className="object-cover"
