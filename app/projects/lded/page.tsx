@@ -75,35 +75,38 @@ export default function LdedPage() {
 
         <div className="space-y-4">
           {/* main setup image */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+          <div className="relative w-full max-w-xl mx-auto aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
             <Image
               src="/images/work/LDED-setup.png"
               alt="LDED experimental setup with IR camera and melt pool monitoring"
               fill
-              className="object-cover"
+              className="object-contain max-h-[60vh]"
+              priority
             />
           </div>
         
-          {/* poster-style small images: melt pool frame + graph + thesis cover */}
+          {/* thesis visuals */}
           <div className="grid grid-cols-2 gap-3">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
               <Image
-                src="/images/projects/lded-poster.png"
-                alt="Poster-style summary with melt pool frame and stability graph"
+                src="/images/projects/thesis-1.png"
+                alt="LDED melt pool frame and stability analysis"
                 fill
-                className="object-cover"
+                className="object-contain max-h-[40vh]"
               />
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+        
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
               <Image
-                src="/images/projects/lded-thesis-cover.png"
-                alt="Cover page of undergraduate LDED thesis"
+                src="/images/projects/thesis-2.png"
+                alt="LDED regression results and quality prediction"
                 fill
-                className="object-cover"
+                className="object-contain max-h-[40vh]"
               />
             </div>
           </div>
         </div>
+
 
 
       {/* modelling + findings */}
