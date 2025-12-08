@@ -108,7 +108,7 @@ const PROJECTS: Project[] = [
     tech: "Next.js · Flask · Tailwind · OpenRouter API",
     href: "https://github.com/Sid-khanna", // swap for real repo/demo
     internalHref: "/projects/story-studio",
-    image: "/images/work/story-studio-placeholder.jpg",
+    image: "/images/work/story-studio-1.png",
     topics: ["Personal"],
   },
   {
@@ -151,7 +151,7 @@ const PROJECTS: Project[] = [
     "Automated repetitive CAD workflows and migration scripts, accelerating design work and reducing manual error in production tooling.",
   tech: "VB.NET · Creo · SmartAssembly · SQL",
   internalHref: "/projects/cad-automation",
-  image: "/images/work/cad-automation-placeholder.jpg",
+  image: "/images/work/mm-logo.png",
   topics: ["Industry"],
   },
   {
