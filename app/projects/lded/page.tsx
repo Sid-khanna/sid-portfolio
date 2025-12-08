@@ -88,7 +88,7 @@ export default function LdedPage() {
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
               <Image
-                src="/images/projects/thesis-1.png"
+                src="/images/work/thesis-1.png"
                 alt="LDED melt pool frame and stability analysis"
                 fill
                 className="object-contain max-h-[40vh]"
@@ -97,7 +97,7 @@ export default function LdedPage() {
 
             <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
               <Image
-                src="/images/projects/thesis-2.png"
+                src="/images/work/thesis-2.png"
                 alt="LDED regression results and quality prediction"
                 fill
                 className="object-contain max-h-[40vh]"
