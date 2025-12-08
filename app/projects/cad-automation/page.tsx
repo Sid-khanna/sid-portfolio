@@ -99,7 +99,7 @@ export default function CadAutomationPage() {
         <div className="space-y-4">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
             <Image
-              src="/images/work/cad-automation-placeholder.jpg"
+              src="/images/work/mm-logo.png"
               alt="Automated CAD and tooling workflows at Mold-Masters"
               fill
               className="object-cover"
