@@ -13,10 +13,10 @@ export default function StoryStudioPage() {
       intro={
         <p>
           A web app that helps people turn half-formed character ideas into
-          detailed profiles and story seeds. Users describe a character’s voice,
-          traits, and genre through a guided multi-step flow, and the app uses
-          LLMs to generate a tailored character sheet plus a short narrative
-          blurb in the chosen style.
+          detailed profiles and story seeds. Users describe a character’s
+          voice, traits, and genre through a guided multi-step flow, and the
+          app uses LLMs to generate a tailored character sheet plus a short
+          narrative blurb in the chosen style.
         </p>
       }
     >
@@ -24,7 +24,7 @@ export default function StoryStudioPage() {
       <div className="grid gap-8 lg:grid-cols-[1.6fr,1.4fr] items-start">
         <div className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
           <h2 className="text-lg font-semibold tracking-tight">
-            Blending engineering & storytelling
+            Blending engineering &amp; storytelling
           </h2>
           <p>
             Writing has always been the creative counterweight to my engineering
@@ -77,21 +77,22 @@ export default function StoryStudioPage() {
 
         {/* screenshot column */}
         <div className="space-y-4">
-          <div className="relative w-full max-w-xl mx-auto aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
+          <div className="relative w-full max-w-xl mx-auto aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
             <Image
               src="/images/work/story-studio-1.png"
               alt="AI Story Studio character and story output"
               fill
-              className="object-contain max-h-[60vh]" // no cropping & not too tall on mobile
+              className="object-contain max-h-[60vh]"
+              priority
             />
           </div>
-          <p className="text-xs text-neutral-500 text-center md:text-left">
+          <p className="text-xs text-neutral-500">
             Early version of AI Story Studio showing a generated character sheet
             and five-beat story outline based on a multi-step character intake
             form.
           </p>
         </div>
-
+      </div>
 
       {/* v1 vs v2 + tech + links */}
       <div className="grid gap-8 md:grid-cols-[1.7fr,1.3fr] items-start">
@@ -122,9 +123,9 @@ export default function StoryStudioPage() {
             </li>
             <li>
               <span className="font-medium">Reusable prompt modules:</span>{" "}
-              shared prompt fragments for “strengths/weaknesses”, “arc
-              outline”, and “story blurb” so I can swap models (DeepSeek,
-              Mistral, etc.) without rewriting logic.
+              shared prompt fragments for “strengths/weaknesses”, “arc outline”,
+              and “story blurb” so I can swap models (DeepSeek, Mistral, etc.)
+              without rewriting logic.
             </li>
             <li>
               <span className="font-medium">Exportable output:</span> structured
@@ -161,10 +162,9 @@ export default function StoryStudioPage() {
             </ul>
           </div>
 
-
           <div className="rounded-2xl border border-neutral-200 bg-white p-4 text-sm text-neutral-800 shadow-sm space-y-3">
             <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
-              Repos & versions
+              Repos &amp; versions
             </h2>
             <div className="flex flex-wrap gap-2">
               <a
@@ -185,8 +185,15 @@ export default function StoryStudioPage() {
               </a>
             </div>
             <p className="text-xs text-neutral-500">
-              The live v1 version is available at  
-              <a href="https://ai-story-odpj.onrender.com/" target="_blank" rel="noreferrer" className="underline hover:text-neutral-700">https://ai-story-odpj.onrender.com/</a>
+              Live v1 demo:&nbsp;
+              <a
+                href="https://ai-story-odpj.onrender.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="underline hover:text-neutral-700"
+              >
+                ai-story-odpj.onrender.com
+              </a>
             </p>
           </div>
         </div>
