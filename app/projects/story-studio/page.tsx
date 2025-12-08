@@ -77,21 +77,21 @@ export default function StoryStudioPage() {
 
         {/* screenshot column */}
         <div className="space-y-4">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+          <div className="relative w-full max-w-xl mx-auto aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
             <Image
               src="/images/work/story-studio-1.png"
               alt="AI Story Studio character and story output"
               fill
-              className="object-cover"
+              className="object-contain max-h-[60vh]" // no cropping & not too tall on mobile
             />
           </div>
-          <p className="text-xs text-neutral-500">
+          <p className="text-xs text-neutral-500 text-center md:text-left">
             Early version of AI Story Studio showing a generated character sheet
             and five-beat story outline based on a multi-step character intake
             form.
           </p>
         </div>
-      </div>
+
 
       {/* v1 vs v2 + tech + links */}
       <div className="grid gap-8 md:grid-cols-[1.7fr,1.3fr] items-start">
