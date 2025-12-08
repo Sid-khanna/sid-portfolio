@@ -83,7 +83,7 @@ export default function LdedPage() {
               className="object-cover"
             />
           </div>
-
+        
           {/* poster-style small images: melt pool frame + graph + thesis cover */}
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
@@ -104,7 +104,7 @@ export default function LdedPage() {
             </div>
           </div>
         </div>
-      </section>
+
 
       {/* modelling + findings */}
       <section className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
