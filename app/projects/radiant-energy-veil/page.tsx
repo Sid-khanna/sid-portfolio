@@ -63,7 +63,7 @@ export default function RadiantEnergyVeilPage() {
           </p>
         </div>
 
-        <div className="space-y-4 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2">
           <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
             <Image
               src="/images/work/radiant-veil-animate.gif"
