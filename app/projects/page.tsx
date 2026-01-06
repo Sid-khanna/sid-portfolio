@@ -121,7 +121,7 @@ const PROJECTS: Project[] = [
       "Personal project predicting F1 race results using engineered features, recency bias, and tuned neural networks.",
     tech: "Python · TensorFlow/Keras · pandas · Keras Tuner",
     internalHref: "/projects/f1",
-    image: "/images/work/f1-placeholder.jpg",
+    image: "/images/work/f1.jpg",
     topics: ["Personal"],
   },
 
@@ -218,7 +218,7 @@ const PROJECTS: Project[] = [
       "Led an EWB project to weave sustainability into a core engineering design course through research, surveys, and faculty collaboration.",
     tech: "Stakeholder interviews · Survey design · Report writing",
     internalHref: "/projects/ewb",
-    image: "/images/work/ewb-placeholder.jpg",
+    image: "/images/work/ewb.jpg",
     topics: ["Extra Curriculum"],
   },
 ];
