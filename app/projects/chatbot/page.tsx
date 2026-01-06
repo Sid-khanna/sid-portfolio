@@ -7,7 +7,7 @@ import ProjectLayout from "@/components/ProjectLayout";
 export default function PortfolioChatbotPage() {
   return (
     <ProjectLayout
-      title="Portfolio chatbot — GraphRAG + Neo4j"
+      title="Portfolio chatbot - GraphRAG + Neo4j"
       breadcrumbLabel="Portfolio chatbot"
       meta="AI & ML · Personal · 2024"
       intro={
@@ -28,7 +28,7 @@ export default function PortfolioChatbotPage() {
           <p>
             Most portfolios are static: you scroll, skim, and maybe click a few
             links. I wanted something closer to how real conversations go when
-            I talk about my work — people ask things like “How did you use
+            I talk about my work, people ask things like “How did you use
             ROS2 on the drone project?” or “What have you done with Neo4j?”.
           </p>
           <p>
@@ -54,7 +54,7 @@ export default function PortfolioChatbotPage() {
               responsibility level, and tech stack.
             </li>
             <li>
-              Relationships capture how things connect — for example,
+              Relationships capture how things connect for example,
               <span className="font-medium"> Sid –[BUILT]→ ParSight –[USES]→ ROS2</span>{" "}
               or <span className="font-medium">Sid –[INTERESTED_IN]→ Computer Vision</span>.
             </li>
