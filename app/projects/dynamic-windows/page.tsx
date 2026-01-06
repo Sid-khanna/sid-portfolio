@@ -97,12 +97,14 @@ export default function DynamicWindowsPage() {
         </div>
 
         <div className="space-y-4">
-          <div className="relative w-full aspect-[21/19] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
+          <div className="w-full rounded-2xl overflow-hidden border border-neutral-200 bg-white max-h-[520px] sm:max-h-[420px]">
             <Image
               src="/images/work/dynamic-windows.png"
               alt="THERM / WINDOW simulation results for dynamic solar windows"
-              fill
-              className="object-contain bg-white"
+              width={1400}
+              height={900}
+              className="w-full h-auto object-contain"
+              priority
             />
           </div>
         </div>
