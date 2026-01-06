@@ -31,7 +31,7 @@ type Project = {
 const PROJECTS: Project[] = [
   // --- Robotics & Perception ---
   {
-    title: "ParSight — golf-ball tracking drone",
+    title: "ParSight - golf-ball tracking drone",
     slug: "parsight",
     category: "Robotics & Perception",
     tag: "Capstone · Coursework · ROS2 · HSV",
@@ -44,7 +44,7 @@ const PROJECTS: Project[] = [
     topics: ["Coursework", "Capstone"],
   },
   {
-    title: "RSX Rover — autonomy & perception",
+    title: "RSX Rover - autonomy & perception",
     slug: "rsx-rover",
     category: "Robotics & Perception",
     tag: "Team Project · Robotics · Sensors",
@@ -59,7 +59,7 @@ const PROJECTS: Project[] = [
 
   // --- AI & ML ---
   {
-    title: "LDED thesis — melt pool monitoring with ML",
+    title: "LDED thesis - melt pool monitoring with ML",
     slug: "lded",
     category: "AI & ML",
     tag: "Research · Thesis · Additive Manufacturing",
@@ -72,7 +72,7 @@ const PROJECTS: Project[] = [
     topics: ["Research"],
   },
   {
-    title: "ingrAIdients — ingredient detection from images",
+    title: "ingrAIdients - ingredient detection from images",
     slug: "ingraidients",
     category: "AI & ML",
     tag: "Coursework · Research · Vision Transformer",
@@ -85,7 +85,7 @@ const PROJECTS: Project[] = [
     topics: ["Coursework"],
   },
     {
-    title: "Portfolio chatbot — GraphRAG + Neo4j",
+    title: "Portfolio chatbot - GraphRAG + Neo4j",
     slug: "portfolio-chatbot",
     category: "AI & ML",
     tag: "Personal · RAG · Knowledge Graph",
@@ -98,7 +98,7 @@ const PROJECTS: Project[] = [
     topics: ["Personal"],
   },
     {
-    title: "AI Story Studio — character & story generator",
+    title: "AI Story Studio - character & story generator",
     slug: "story-studio",
     category: "AI & ML",
     tag: "Personal · LLM · Full-stack",
@@ -129,7 +129,7 @@ const PROJECTS: Project[] = [
 
   // --- Design & Manufacturing ---
   {
-    title: "Blue Sky Solar Racing — World Solar Challenge",
+    title: "Blue Sky Solar Racing - World Solar Challenge",
     slug: "blue-sky-solar",
     category: "Design & Manufacturing",
     tag: "Team Project · Carbon Fiber · Structures",
@@ -142,7 +142,7 @@ const PROJECTS: Project[] = [
     topics: ["Extra Curriculum"],
   },
   {
-  title: "CAD automation — Mold-Masters",
+  title: "CAD automation - Mold-Masters",
   slug: "cad-automation",
   category: "Design & Manufacturing",
   tag: "Industry · Automation · CAD",
@@ -155,7 +155,7 @@ const PROJECTS: Project[] = [
   topics: ["Industry"],
   },
   {
-    title: "Dynamic Solar Windows — AP2D & 3ENano",
+    title: "Dynamic Solar Windows - AP2D & 3ENano",
     slug: "dynamic-solar-windows",
     category: "Design & Manufacturing",
     tag: "Research · Simulation · Energy",
@@ -168,7 +168,7 @@ const PROJECTS: Project[] = [
     topics: ["Research"],
   },
   {
-    title: "Radiant Energy Veil — dynamic window concept",
+    title: "Radiant Energy Veil - dynamic window concept",
     slug: "radiant-energy-veil",
     category: "Design & Manufacturing",
     tag: "Research · AP2D · Concept Design",
@@ -181,7 +181,7 @@ const PROJECTS: Project[] = [
     topics: ["Research"],
   },
   {
-    title: "Helping Hand — powered wheelchair assist device",
+    title: "Helping Hand - powered wheelchair assist device",
     slug: "helping-hand",
     category: "Design & Manufacturing",
     tag: "Coursework · Assistive Design",
@@ -194,7 +194,7 @@ const PROJECTS: Project[] = [
     topics: ["Coursework"],
   },
   {
-    title: "Matboard Bridge — structural design project",
+    title: "Matboard Bridge - structural design project",
     slug: "matboard-bridge",
     category: "Design & Manufacturing",
     tag: "Coursework · Structures",
@@ -209,7 +209,7 @@ const PROJECTS: Project[] = [
 
   // --- Impact & Leadership ---
   {
-    title: "Engineers Without Borders — curriculum change",
+    title: "Engineers Without Borders - curriculum change",
     slug: "ewb-curriculum",
     category: "Impact & Leadership",
     tag: "Leadership · Sustainability · Research",
