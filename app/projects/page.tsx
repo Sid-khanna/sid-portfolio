@@ -142,7 +142,7 @@ const PROJECTS: Project[] = [
     topics: ["Extra Curriculum"],
   },
   {
-  title: "CAD automation - Mold-Masters",
+  title: "Mold-Masters - CAD automation",
   slug: "cad-automation",
   category: "Design & Manufacturing",
   tag: "Industry · Automation · CAD",
