@@ -97,7 +97,7 @@ export default function DynamicWindowsPage() {
         </div>
 
         <div className="space-y-4">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+          <div className="relative w-full aspect-[21/19] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
             <Image
               src="/images/work/dynamic-windows.png"
               alt="THERM / WINDOW simulation results for dynamic solar windows"
