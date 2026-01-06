@@ -63,22 +63,22 @@ export default function RadiantEnergyVeilPage() {
           </p>
         </div>
 
-        <div className="space-y-4">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+        <div className="space-y-4 md:grid-cols-2">
+          <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
             <Image
               src="/images/work/radiant-veil-animate.gif"
               alt="Radiant Energy Veil window concept render"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
           {/* if you add a second render later, drop it here */}
-          { <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+          { <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
             <Image
               src="/images/work/radiant-veil.png"
               alt="Detail render of Radiant Energy Veil concept"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div> }
         </div>
