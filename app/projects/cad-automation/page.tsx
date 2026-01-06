@@ -7,7 +7,7 @@ import ProjectLayout from "@/components/ProjectLayout";
 export default function CadAutomationPage() {
   return (
     <ProjectLayout
-      title="CAD automation — Mold-Masters"
+      title="Mold-Masters - CAD automation"
       breadcrumbLabel="Mold-Masters"
       meta="Design & Manufacturing · Industry · 2023–Now"
       intro={
