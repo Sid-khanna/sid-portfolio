@@ -78,22 +78,22 @@ export default function MatboardBridgePage() {
 
         <div className="space-y-4">
           {/* drawing / plan view */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+          <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
             <Image
               src="/images/work/matboard-bridge.png"
               alt="Matboard bridge concept drawing and dimensions"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 
           {/* optional second image – swap path if you have a better one */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+          <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
             <Image
               src="/images/projects/matboard-bridge-simulation.png"
               alt="Simulation view of matboard bridge under load"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </div>
