@@ -77,17 +77,6 @@ export default function F1PredictorPage() {
             feeds the modelling stack.
           </p>
         </div>
-
-        <div className="space-y-4">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
-            <Image
-              src="/images/work/f1-placeholder.jpg"
-              alt="Formula 1 predictor project visual"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
       </div>
 
       {/* modelling + tech + links */}
