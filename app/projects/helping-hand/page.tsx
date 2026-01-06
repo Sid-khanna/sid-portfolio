@@ -60,21 +60,14 @@ export default function HelpingHandPage() {
       </section>
 
       {/* Images */}
-      <section className="grid gap-8 md:grid-cols-2 mt-10">
-        <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
+      <section className="mt-10">
+        <div className="relative mx-auto max-w-4xl aspect-[16/9] sm:aspect-[5/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
           <Image
             src="/images/work/helping-hand-1.png"
-            alt="Helping Hand CAD overview"
+            alt="Helping Hand assistive arm CAD design"
             fill
-            className="object-cover"
-          />
-        </div>
-        <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
-          <Image
-            src="/images/work/helping-hand-2.png"
-            alt="Helping Hand gripper prototype"
-            fill
-            className="object-cover"
+            className="object-contain p-4"
+            priority
           />
         </div>
       </section>
