@@ -95,19 +95,6 @@ export default function CadAutomationPage() {
             </li>
           </ul>
         </div>
-
-        {/* logo / visual */}
-        <div className="space-y-4">
-          <div className="relative w-full max-w-xs mx-auto aspect-[16/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 flex items-center justify-center">
-            <Image
-              src="/images/work/mm-logo.png"
-              alt="Mold-Masters logo"
-              fill
-              className="object-contain p-4"
-              priority
-            />
-          </div>
-        </div>
       </div>
 
       {/* collaboration, impact + tech card */}
