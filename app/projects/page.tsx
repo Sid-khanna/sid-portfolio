@@ -190,7 +190,7 @@ const PROJECTS: Project[] = [
       "Course project focused on helping powered wheelchair users retrieve dropped objects, from stakeholder interviews to CAD + animations.",
     tech: "Stakeholder interviews · CAD · Engineering drawings",
     internalHref: "/projects/helping-hand",
-    image: "/images/work/helping-hand.png",
+    image: "/images/work/helping-hand-1.png",
     topics: ["Coursework"],
   },
   {
