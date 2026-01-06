@@ -106,7 +106,7 @@ export default function BlueSkySolarPage() {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="grid gap-4 sm:grid-cols-2">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
             <Image
               src="/images/work/wsc-finish.jpg"
@@ -114,9 +114,8 @@ export default function BlueSkySolarPage() {
               fill
               className="object-cover"
             />
-          </div>s
-
-          {/* TODO: swap this path for a real manufacturing / layup photo if you like */}
+          </div>
+        
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
             <Image
               src="/images/work/wsc-layup.jpeg"
