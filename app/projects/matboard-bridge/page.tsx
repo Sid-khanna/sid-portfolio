@@ -76,7 +76,7 @@ export default function MatboardBridgePage() {
           </p>
         </div>
 
-        <div className=""grid gap-4 md:grid-cols-2 lg:grid-cols-1"">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-1">
           {/* drawing / plan view */}
           <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
             <Image
