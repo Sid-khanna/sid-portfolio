@@ -61,20 +61,28 @@ export default function HelpingHandPage() {
         </p>
       </section>
 
-      {/* Image (LDED-style container so it doesn't crop / overflow) */}
-      <section className="mt-10 space-y-3">
-        <div className="relative w-full max-w-xl mx-auto aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
+      {/* Images — same working pattern as LDED */}
+      <section className="mt-10 grid gap-6 md:grid-cols-2">
+        {/* Image 1 */}
+        <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
           <Image
             src="/images/work/helping-hand-1.png"
-            alt="Helping Hand CAD concept"
+            alt="Helping Hand CAD overview"
             fill
             className="object-contain"
             priority
           />
         </div>
-        <p className="text-xs text-neutral-500 text-center">
-          Helping Hand CAD concept showing the linkage geometry and reach.
-        </p>
+
+        {/* Image 2 */}
+        <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-white">
+          <Image
+            src="/images/work/helping-hand-2.png"
+            alt="Helping Hand annotated design and dimensions"
+            fill
+            className="object-contain"
+          />
+        </div>
       </section>
     </ProjectLayout>
   );
