@@ -7,22 +7,34 @@ type Slide = { title: string; src: string; href: string; tag?: string };
 
 const SLIDES: Slide[] = [
   {
-    title: "ParSight — golf-ball tracking drone",
+    title: "CAD Automation at Mold-Masters",
+    src: "/images/work/mm-logo.png",
+    href: "/projects?tab=work",
+    tag: "Automation",
+  },
+  {
+    title: "ParSight Drone Tracking System",
     src: "/images/work/drone-parsight.png",
     href: "/projects/parsight",
     tag: "Robotics",
   },
   {
-    title: "CAD Automation — Mold-Masters",
-    src: "/images/work/mm-logo.png",   
-    href: "/projects?tab=work",
-    tag: "Automation",
+    title: "LDED Thesis: Monitoring + ML",
+    src: "/images/work/LDED-setup.png",
+    href: "/projects/lded",
+    tag: "Research",
   },
   {
-    title: "RSX Rover — Autonomy Stack",
-    src: "/images/work/rover-rsx.jpg",
-    href: "/projects/rover",
-    tag: "Robotics",
+    title: "Portfolio Chatbot with GraphRAG",
+    src: "/images/work/portfolio-chatbot-ui.png",
+    href: "/projects/chatbot",
+    tag: "AI Systems",
+  },
+  {
+    title: "ingrAIdients Vision Pipeline",
+    src: "/images/work/ingraidients-architecture.jpg",
+    href: "/projects/ingraidients",
+    tag: "AI",
   },
   {
     title: "World Solar Challenge — Blue Sky Solar Racing",
@@ -31,34 +43,21 @@ const SLIDES: Slide[] = [
     tag: "Hardware",
   },
   {
-    title: "LDED Thesis — Melt Pool Monitoring + ML",
-    src: "/images/work/LDED-setup.png", 
-    href: "/projects/lded",
-    tag: "Research",
-  },
-  {
-    title: "ingrAIdients — Vision Transformer Pipeline",
-    src: "/images/work/ingraidients-architecture.jpg", // replace later
-    href: "/projects/ingraidients",
-    tag: "AI",
-  },
-  {
-    title: "Portfolio Chatbot — GraphRAG + Neo4j",
-    src: "/images/work/portfolio-chatbot-ui.png", // replace later
-    href: "/projects/chatbot",
-    tag: "AI Systems",
+    title: "RSX Rover — Autonomy Stack",
+    src: "/images/work/rover-rsx.jpg",
+    href: "/projects/rover",
+    tag: "Robotics",
   },
 ];
 
-
 export default function FeaturedReel() {
-  const TRACK = [...SLIDES, ...SLIDES]; // duplicate for seamless loop
+  const TRACK = Array(5).fill(SLIDES).flat();
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const scrollByCards = (dir: "left" | "right") => {
     const el = scrollRef.current;
     if (!el) return;
-    const cardWidth = 360; // approx card width + gap
+    const cardWidth = 360;
     const amount = dir === "left" ? -cardWidth : cardWidth;
     el.scrollBy({ left: amount, behavior: "smooth" });
   };
@@ -66,7 +65,6 @@ export default function FeaturedReel() {
   return (
     <section className="pb-16">
       <div className="max-w-6xl mx-auto px-6">
-        {/* header */}
         <div className="flex items-baseline justify-between mb-6">
           <h2 className="text-2xl md:text-3xl font-semibold">featured work</h2>
           <a href="/projects" className="text-sm text-neutral-700 hover:text-black">
@@ -74,17 +72,12 @@ export default function FeaturedReel() {
           </a>
         </div>
 
-        {/* reel */}
         <div className="relative group">
-          {/* scroll container */}
           <div
             ref={scrollRef}
             className="overflow-x-auto overflow-y-hidden scrollbar-none [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
           >
-            {/* animated track */}
-            <div
-              className="flex w-max gap-4 animate-[marquee_28s_linear_infinite] motion-reduce:animate-none"
-            >
+            <div className="flex w-max gap-4 animate-[marquee_60s_linear_infinite] motion-reduce:animate-none">
               {TRACK.map((s, i) => (
                 <a
                   key={s.title + i}
@@ -107,7 +100,6 @@ export default function FeaturedReel() {
             </div>
           </div>
 
-          {/* arrows – appear on hover */}
           <button
             type="button"
             onClick={() => scrollByCards("left")}
@@ -116,6 +108,7 @@ export default function FeaturedReel() {
           >
             ‹
           </button>
+
           <button
             type="button"
             onClick={() => scrollByCards("right")}
