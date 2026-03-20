@@ -28,7 +28,7 @@ export default function CadAutomationPage() {
             tooling, and internal engineering tools
           </li>
           <li>
-            <span className="font-medium">Tech:</span> VB.NET, JavaScript, Creo,
+            <span className="font-medium">Tech:</span> JavaScript, HTML, VB.NET, Creo,
             SQL, and internal automation frameworks
           </li>
           <li>
