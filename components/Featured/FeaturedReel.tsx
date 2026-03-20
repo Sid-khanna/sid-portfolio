@@ -51,7 +51,7 @@ const SLIDES: Slide[] = [
 ];
 
 export default function FeaturedReel() {
-  const TRACK = Array(5).fill(SLIDES).flat();
+  const TRACK = Array(10).fill(SLIDES).flat();
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const scrollByCards = (dir: "left" | "right") => {
