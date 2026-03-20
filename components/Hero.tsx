@@ -17,7 +17,7 @@ export default function Hero() {
             <div className="max-w-3xl pl-16 md:pl-36">
           <p className="text-3xl md:text-5xl font-semibold text-white drop-shadow">Hi! I’m Sid</p>
           <h1 className="mt-3 text-2xl md:text-4xl font-medium text-white/90 max-w-3xl leading-snug">
-            Discovering new paths, <span className="text-white/70">creating unforgettable stories</span>
+            Robotics, software, and AI engineer<span className="text-white/70">building intelligent systems</span>
           </h1>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/projects" className="rounded-xl bg-white text-black px-4 py-2 text-sm font-medium hover:bg-white/90">See projects</Link>
