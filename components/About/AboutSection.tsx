@@ -1,4 +1,4 @@
-"use client"; import AboutShowcase from "./AboutShowcase"; export default function AboutSection() { return ( <section className="py-12 sm:py-16"> <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 gap-10 md:grid-cols-5 items-start"> {/* LEFT: plain text */} <div className="md:col-span-2"> <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4"> who am i? </h2> <div className="s"use client";
+"use client";
 
 import AboutShowcase from "./AboutShowcase";
 
@@ -7,10 +7,10 @@ export default function AboutSection() {
     <section className="py-12 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 gap-10 md:grid-cols-5 items-start">
 
-        {/* LEFT: text */}
+        {/* LEFT: plain text */}
         <div className="md:col-span-2">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4">
-            about me
+            who am i?
           </h2>
 
           <div className="space-y-3 text-[15px] sm:text-base text-neutral-800 leading-relaxed max-w-xl">
@@ -44,7 +44,7 @@ export default function AboutSection() {
         </div>
 
 
-        {/* RIGHT: showcase */}
+        {/* RIGHT: the showcase */}
         <div className="md:col-span-3 mt-6 md:mt-0">
           <AboutShowcase />
         </div>
