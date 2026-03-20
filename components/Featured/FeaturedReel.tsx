@@ -77,7 +77,7 @@ export default function FeaturedReel() {
             ref={scrollRef}
             className="overflow-x-auto overflow-y-hidden scrollbar-none [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
           >
-            <div className="flex w-max gap-4 animate-[marquee_60s_linear_infinite] motion-reduce:animate-none">
+            <div className="flex w-max gap-4 animate-[marquee_55s_linear_infinite] motion-reduce:animate-none">
               {TRACK.map((s, i) => (
                 <a
                   key={s.title + i}
