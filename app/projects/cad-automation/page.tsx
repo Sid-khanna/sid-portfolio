@@ -1,133 +1,148 @@
-// app/projects/cad-automation/page.tsx
 "use client";
 
-import Image from "next/image";
 import ProjectLayout from "@/components/ProjectLayout";
 
 export default function CadAutomationPage() {
   return (
     <ProjectLayout
-      title="Mold-Masters - CAD automation"
+      title="CAD Automation at Mold-Masters"
       breadcrumbLabel="Mold-Masters"
-      meta="Design & Manufacturing · Industry · 2023–Now"
+      meta="Software & Automation · Industry · 2023–Now"
       intro={
         <p>
-          I work as an Automation Developer at Mold-Masters, building tools that
-          automate CAD-heavy workflows for hot runner and injection molding
-          systems. I originally joined as a PEY intern, stayed on part-time
-          through my final year, and now work full-time continuing to expand the
-          automation stack.
+          I work as an Automation Developer at Mold-Masters, where I build tools
+          that automate CAD-heavy engineering workflows for hot runner and
+          injection molding systems. I joined as a PEY intern, continued part-time
+          through my final year, and now work full-time expanding internal
+          automation tools used in real design and manufacturing workflows.
         </p>
       }
       snapshot={
         <ul className="space-y-1.5 text-xs md:text-sm text-neutral-700">
           <li>
             <span className="font-medium">Role:</span> Automation Developer
-            (PEY intern → part-time → full-time)
+            (PEY intern to part-time to full-time)
           </li>
           <li>
-            <span className="font-medium">Focus:</span> CAD automation, design
-            tools, and data-driven reporting
+            <span className="font-medium">Focus:</span> CAD automation, workflow
+            tooling, and internal engineering tools
           </li>
           <li>
-            <span className="font-medium">Tech:</span> VB.NET, Creo /
-            SmartAssembly, SQL, internal automation frameworks
+            <span className="font-medium">Tech:</span> VB.NET, JavaScript, Creo,
+            SQL, and internal automation frameworks
           </li>
           <li>
-            <span className="font-medium">Impact:</span> reduced repetitive CAD
-            work, fewer modelling errors, faster design turnaround
+            <span className="font-medium">Impact:</span> reduced repetitive design
+            work, improved consistency, and helped modernize legacy automation
+            workflows
           </li>
         </ul>
       }
     >
-      {/* overview + hero image */}
       <div className="grid gap-8 lg:grid-cols-[1.6fr,1.4fr] items-start">
         <div className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
           <h2 className="text-lg font-semibold tracking-tight">
             Context &amp; role
           </h2>
           <p>
-            Mold-Masters designs complex hot runner systems with a high degree
-            of configuration. Historically, engineers had to create many of
-            these models and drawings manually, repeating similar steps for
-            every order. My role has been to turn those tribal workflows into
-            robust automation: parameter-driven tools that generate models,
-            drawings, and reports with minimal manual input.
+            Mold-Masters designs highly configurable hot runner systems, which
+            means engineers often deal with many recurring modeling, drawing, and
+            documentation tasks across similar product variants. A lot of that
+            work was historically manual, making it time-consuming, repetitive,
+            and more prone to inconsistency.
           </p>
           <p>
-            Starting as a PEY intern, I learned VB.NET and the company&apos;s
-            internal automation framework quickly so I could contribute real
-            tools instead of just prototypes. Over time I took ownership of
-            larger scripts and eventually helped support the migration from
-            legacy CPS tooling toward SIGMAXIM SmartAssembly.
+            My role has been to turn those repeated engineering processes into
+            reliable automation. I build parameter-driven tools that generate
+            models, drawings, and related outputs from structured inputs, reducing
+            manual effort while making the workflow faster and more consistent.
+          </p>
+          <p>
+            Over time, I also became involved in modernizing parts of the
+            automation stack, helping move older CPS VB.NET logic toward newer
+            JavaScript-based tooling. That work involved understanding legacy
+            behavior, preserving expected outputs, and making the codebase easier
+            to maintain and extend.
           </p>
 
           <h2 className="mt-6 text-lg font-semibold tracking-tight">
             What I built
           </h2>
           <p>
-            Day to day, my work sits at the intersection of CAD, code, and
-            manufacturing. Examples of the kinds of tools I&apos;ve developed:
+            My work sits at the intersection of CAD, software, and implementation.
+            Some of the tools and systems I have worked on include:
           </p>
           <ul className="list-disc pl-5 space-y-1.5">
             <li>
               <span className="font-medium">Parametric model generators:</span>{" "}
-              scripts that create families of components and assemblies directly
-              from a small set of design inputs, instead of engineers modelling
-              each variant from scratch.
+              tools that create component and assembly variants directly from a
+              small set of design inputs, reducing the need to rebuild similar
+              geometry from scratch.
             </li>
             <li>
-              <span className="font-medium">Drawing &amp; BOM automation:</span>{" "}
-              tools that populate title blocks, dimensions, and bill-of-material
-              information, reducing copy–paste errors and speeding up release.
+              <span className="font-medium">Drawing and BOM automation:</span>{" "}
+              scripts that populate title blocks, dimensions, and bill-of-material
+              information more consistently, while reducing repetitive manual work
+              and release errors.
             </li>
             <li>
-              <span className="font-medium">Migration tools:</span> utilities
-              that help move existing CPS-based automation into more modern
-              SmartAssembly-based workflows, keeping behaviour consistent while
-              improving maintainability.
+              <span className="font-medium">Migration and modernization:</span>{" "}
+              tools that help move legacy CPS VB.NET automation toward newer
+              JavaScript-based workflows, improving maintainability while keeping
+              existing behavior consistent.
             </li>
             <li>
-              <span className="font-medium">Data &amp; reporting scripts:</span>{" "}
-              small apps that query SQL databases and generate reports for
-              engineering / management, giving better visibility into tooling
-              usage and design variants.
+              <span className="font-medium">Data and reporting tools:</span>{" "}
+              internal scripts and small applications that query SQL data and
+              generate reports for engineering and management, helping teams better
+              understand usage, part variation, and workflow activity.
             </li>
           </ul>
         </div>
       </div>
 
-      {/* collaboration, impact + tech card */}
       <div className="grid gap-8 md:grid-cols-[1.7fr,1.3fr] items-start">
         <div className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
           <h2 className="text-lg font-semibold tracking-tight">
             Collaboration &amp; impact
           </h2>
           <p>
-            Building good automation tools meant spending a lot of time with the
-            actual users: design engineers, drafters, and manufacturing teams.
-            I ran feedback loops with them, watched how they used early versions
-            of the tools, and iterated on UX details like input forms, error
-            messages, and default behaviours.
+            A big part of making these tools successful was working closely with
+            the people who actually use them. I spent time with design engineers,
+            drafters, and manufacturing stakeholders to understand where the real
+            bottlenecks were, how current workflows operated, and what would make
+            automation useful rather than disruptive.
           </p>
           <p>
-            That user-centric approach helped ensure the tools matched real
-            workflows instead of forcing people to redesign their process around
-            the code. The result was faster adoption and tangible time savings:
-            many repetitive modelling tasks now take minutes instead of hours,
-            and standard features are generated consistently across projects.
+            That meant iterating not just on backend logic, but also on the
+            usability of the tools themselves, including input structure, default
+            behaviors, validation, and error handling. This helped improve
+            adoption, because the tools fit into existing engineering workflows
+            instead of forcing users to work around the software.
+          </p>
+          <p>
+            The result was meaningful time savings on recurring tasks, improved
+            consistency across generated outputs, and less manual rework in
+            day-to-day design processes. It also gave me hands-on experience
+            building technical solutions that had to be practical, maintainable,
+            and trusted by real users.
           </p>
 
           <h2 className="mt-6 text-lg font-semibold tracking-tight">
-            What I&apos;ve learned
+            What I learned
           </h2>
           <p>
-            This role taught me how much leverage there is in automation inside
-            an established company. A few well-designed tools can quietly save
-            hundreds of engineering hours and reduce error in parts that
-            eventually hit production. It also strengthened my ability to read
-            large CAD models, reason about parametric design, and ship
-            production code that other engineers depend on.
+            This role showed me how much leverage good automation can create
+            inside an engineering organization. A well-designed internal tool can
+            save large amounts of time, reduce error, and quietly improve the
+            reliability of systems that feed directly into production.
+          </p>
+          <p>
+            It also strengthened my ability to work across software and
+            engineering contexts at once. I became better at understanding complex
+            design logic, translating workflow requirements into maintainable code,
+            and building tools that are not just technically correct, but actually
+            usable and valuable for the teams depending on them.
           </p>
         </div>
 
@@ -137,13 +152,12 @@ export default function CadAutomationPage() {
               Tech &amp; tools
             </h2>
             <ul className="space-y-1.5">
-              <li>VB.NET for automation tooling</li>
-              <li>Creo &amp; SmartAssembly for parametric CAD</li>
-              <li>SQL for reporting and data queries</li>
-              <li>Git / version control for shared scripts</li>
-              <li>
-                Close collaboration with design &amp; manufacturing engineering
-              </li>
+              <li>VB.NET and JavaScript for automation tooling</li>
+              <li>Creo for parametric CAD workflows</li>
+              <li>SQL for reporting and engineering data queries</li>
+              <li>Internal CPS automation framework</li>
+              <li>Version-controlled shared scripts</li>
+              <li>Collaboration with design and manufacturing teams</li>
             </ul>
           </div>
         </div>
