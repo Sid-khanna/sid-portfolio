@@ -1,4 +1,3 @@
-// app/projects/solar/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -7,102 +6,102 @@ import ProjectLayout from "@/components/ProjectLayout";
 export default function BlueSkySolarPage() {
   return (
     <ProjectLayout
-      title="Blue Sky Solar Racing — structural & manufacturing lead"
+      title="Blue Sky Solar Racing - structural and manufacturing lead"
       breadcrumbLabel="Blue Sky Solar"
       meta="Design & Manufacturing · World Solar Challenge · 2022–2023"
       intro={
         <p>
           I was the Chief Structural and Manufacturing Engineer for the
           University of Toronto&apos;s Blue Sky Solar Racing team, where we
-          designed and built a road-legal solar car that raced 3,000+ km across
-          the Australian Outback in the World Solar Challenge. My job was to
-          make sure the car we dreamed up on paper could actually be built,
-          survive the desert, and pass scrutineering.
+          designed and built a road-legal solar car that raced more than
+          3,000 km across the Australian Outback in the World Solar Challenge.
+          My role was to make sure the car was not only designed well, but could
+          actually be manufactured, assembled, and trusted under race conditions.
         </p>
       }
       snapshot={
         <ul className="space-y-1.5 text-xs md:text-sm text-neutral-700">
           <li>
-            <span className="font-medium">Role:</span> Chief Structural &
+            <span className="font-medium">Role:</span> Chief Structural and
             Manufacturing Engineer
           </li>
           <li>
             <span className="font-medium">Event:</span> Bridgestone World Solar
-            Challenge (3000+ km)
+            Challenge
           </li>
           <li>
-            <span className="font-medium">Focus:</span> carbon fibre structures,
-            plug &amp; mold design, manufacturing pipelines
+            <span className="font-medium">Focus:</span> composite structures,
+            plug and mold design, and manufacturing planning
           </li>
           <li>
-            <span className="font-medium">Team:</span> 30+ multidisciplinary
-            students across electrical, strategy, and mechanical
+            <span className="font-medium">Team:</span> multidisciplinary student
+            team across mechanical, electrical, strategy, and solar
           </li>
         </ul>
       }
     >
-      {/* overview + photos */}
       <div className="grid gap-8 lg:grid-cols-[1.6fr,1.4fr] items-start">
         <div className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
           <h2 className="text-lg font-semibold tracking-tight">
-            Role &amp; scope
+            Role and scope
           </h2>
           <p>
-            As structural and manufacturing lead, I owned everything from the
-            composite layup schedule to how our molds were machined and how
-            parts flowed through the shop. The car&apos;s chassis, aero body,
-            and major structural components all passed through our team at some
-            point — if it carried load or needed to be built efficiently, it was
-            on my plate.
+            As structural and manufacturing lead, I was responsible for a large
+            portion of the car&apos;s composite build process, from structural
+            decisions and laminate planning to molds, tooling, and shop
+            execution. If a part needed to carry load, fit correctly, or be
+            built efficiently, it usually came through our team.
           </p>
           <p>
-            A big part of the job was turning high-level performance goals
-            (lightweight, stiff, manufacturable) into specific laminate stacks,
-            tooling strategies, and process plans that volunteers could actually
-            follow on tight timelines.
+            A big part of the role was translating high-level design goals such
+            as low weight, sufficient stiffness, and manufacturability into
+            practical manufacturing decisions. That meant thinking not only
+            about geometry, but also about tooling splits, layup schedules,
+            fabrication sequence, and what the team could realistically execute
+            on a tight timeline.
           </p>
 
           <h2 className="mt-6 text-lg font-semibold tracking-tight">
-            Composites, tooling &amp; process improvement
+            Composites, tooling, and process improvement
           </h2>
           <p>
-            I led the design and manufacturing of the gelcoat and fiberglass
-            molds for the aero body, including the bottom shell and fairings.
-            This meant working closely with CAD, simulations, and the machine
-            shop to decide how we&apos;d split molds, where to place flanges,
-            and how to keep tolerances tight while staying within budget.
+            I led the design and manufacturing of gelcoat and fiberglass molds
+            for major aero body components, including the bottom shell and
+            fairings. This involved working closely with CAD, manufacturing, and
+            shop processes to decide how molds should be split, where flanges
+            should go, and how to maintain tolerances while staying within our
+            time and budget constraints.
           </p>
           <p>
-            On the shop floor, I developed and refined our carbon fibre layup
-            procedures (wet layups and infusion) for large panels and structural
-            ribs. By standardising layup sequences and experimenting with
-            different print profiles for plug tooling, I helped reduce print and
-            finishing time by roughly <span className="font-medium">20%</span>{" "}
-            while keeping quality consistent.
+            On the manufacturing side, I helped develop and refine our carbon
+            fiber layup procedures for both wet layups and infusion-based parts.
+            I also worked on plug development and tooling workflows, including
+            process improvements that reduced 3D printing and finishing time by
+            about <span className="font-medium">20%</span> while keeping part
+            quality consistent.
           </p>
           <p>
-            I also worked on quality checks and small structural tests to
-            validate that our laminate choices met stiffness and strength
-            requirements before committing to full-scale parts.
+            We also carried out structural checks and smaller validation efforts
+            before committing to full-scale components, which helped reduce risk
+            and improve confidence in the final build.
           </p>
 
           <h2 className="mt-6 text-lg font-semibold tracking-tight">
-            Teamwork &amp; race impact
+            Teamwork and race impact
           </h2>
           <p>
-            None of this was done in isolation — I collaborated tightly with the
-            electrical, strategy, and solar array sub-teams so that structural
-            decisions supported packaging, cooling, and array performance.
-            Manufacturing constraints often fed back into design, and I became a
-            bridge between &quot;what&apos;s optimal on paper&quot; and
-            &quot;what we can actually build before race day.&quot;
+            This work depended on constant coordination with other subteams.
+            Structural choices affected packaging, solar array integration,
+            cooling, and race strategy, so I often worked across boundaries to
+            make sure the design could actually be built and assembled without
+            compromising performance.
           </p>
           <p>
-            The experience was the closest thing I&apos;ve had to working at a
-            small hardware startup: hard deadlines, physical risk if things
-            break, and a team that has to trust each other under pressure. It
-            massively levelled up my understanding of composites, DFM, and
-            leadership on a real engineering programme.
+            The project felt a lot like working on a small hardware startup.
+            There were hard deadlines, physical consequences if parts failed,
+            and very little room for disconnect between design and execution. It
+            gave me real experience in composites, design for manufacturing, and
+            leading engineering work under pressure.
           </p>
         </div>
 
@@ -115,7 +114,7 @@ export default function BlueSkySolarPage() {
               className="object-cover"
             />
           </div>
-        
+
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100">
             <Image
               src="/images/work/wsc-layup.jpeg"
@@ -127,39 +126,39 @@ export default function BlueSkySolarPage() {
         </div>
       </div>
 
-      {/* tech + quick facts card */}
       <div className="grid gap-8 md:grid-cols-[1.7fr,1.3fr] items-start">
         <div className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
           <h2 className="text-lg font-semibold tracking-tight">
-            What I took away
+            What I learned
           </h2>
           <p>
-            Blue Sky Solar was where I learned how much manufacturing reality
-            shapes design. It forced me to think in terms of layup direction,
-            demold angles, cure schedules, and shop throughput — not just neat
-            CAD. It also gave me experience running a team, training new
-            members, and making trade-offs when resources are limited and the
-            race clock doesn&apos;t stop.
+            Blue Sky Solar was one of the most important experiences I had in
+            learning how manufacturing reality shapes engineering design. It
+            pushed me to think in terms of layup direction, demold angles, cure
+            planning, tooling limitations, and shop throughput rather than just
+            ideal CAD geometry.
           </p>
           <p>
-            More than any other extracurricular, this project shaped how I think
-            about building hardware that works in the real world — and how to
-            lead a team that can actually ship it.
+            It also gave me experience leading people through a long and
+            demanding hardware build. I learned how to train newer members, make
+            tradeoffs under constraints, and keep a team moving when schedules
+            are tight and the final deadline does not move.
           </p>
         </div>
 
         <div className="space-y-4">
           <div className="rounded-2xl border border-neutral-200 bg-white p-4 text-sm text-neutral-800 shadow-sm">
             <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-2">
-              Tech &amp; processes
+              Tech and processes
             </h2>
             <ul className="space-y-1.5">
-              <li>Carbon fibre &amp; Kevlar layups (wet &amp; infusion)</li>
-              <li>Gelcoat &amp; fiberglass plug / mold design</li>
-              <li>Autodesk / CAD for surface modelling &amp; tooling splits</li>
-              <li>Basic FEA / structural checks for key components</li>
-              <li>3D printing for plug sections and tooling</li>
-              <li>Lean-ish process improvements for composite production</li>
+              <li>Carbon fiber and Kevlar layups</li>
+              <li>Wet layup and infusion-based composite processes</li>
+              <li>Gelcoat and fiberglass plug and mold design</li>
+              <li>CAD for surfacing, tooling, and mold splitting</li>
+              <li>Basic structural validation and design checks</li>
+              <li>3D printing for plugs and tooling development</li>
+              <li>Process improvement for composite manufacturing</li>
             </ul>
           </div>
         </div>
