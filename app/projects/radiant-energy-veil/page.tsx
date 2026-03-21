@@ -1,4 +1,3 @@
-// app/projects/radiant-energy-veil/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -7,59 +6,76 @@ import ProjectLayout from "@/components/ProjectLayout";
 export default function RadiantEnergyVeilPage() {
   return (
     <ProjectLayout
-      title="Radiant Energy Veil — dynamic window concept"
+      title="Radiant Energy Veil - dynamic window concept"
       breadcrumbLabel="Radiant Energy Veil"
-      meta="Design & Manufacturing · AP2D Lab · 2021"
+      meta="Design & Manufacturing · Research · 2021"
       intro={
         <p>
-          During a 4-month research term at the Advanced Photovoltaics–
-          Photonics and Devices (AP2D) lab, I worked on an early-stage concept
-          for a dynamic window that used a <span className="font-medium">
-          Radiant Energy Veil
-          </span>{" "}
-          to actively reduce heat loss in buildings. The goal was to explore
-          how selectively controlled radiative layers could improve thermal
-          comfort and energy efficiency beyond conventional glazing systems.
+          During a 4-month research term at the Advanced Photovoltaics,
+          Photonics and Devices Lab, I worked on an early-stage dynamic window
+          concept built around a <span className="font-medium">Radiant Energy Veil</span>.
+          The goal was to explore how a controllable radiative layer could help
+          reduce heat loss in buildings and improve thermal performance beyond
+          conventional glazing systems.
         </p>
       }
+      snapshot={
+        <ul className="space-y-1.5 text-xs md:text-sm text-neutral-700">
+          <li>
+            <span className="font-medium">Context:</span> early-stage research
+            and concept development at AP2D
+          </li>
+          <li>
+            <span className="font-medium">Focus:</span> dynamic glazing,
+            radiative heat transfer, and manufacturable window concepts
+          </li>
+          <li>
+            <span className="font-medium">My role:</span> literature review,
+            patent mapping, and CAD concept development
+          </li>
+          <li>
+            <span className="font-medium">Outcome:</span> helped define a viable
+            design direction for later AP2D window work
+          </li>
+        </ul>
+      }
     >
-      {/* overview + images */}
       <section className="grid gap-8 lg:grid-cols-[1.6fr,1.4fr] items-start">
         <div className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
           <h2 className="text-lg font-semibold tracking-tight">
-            Context &amp; objectives
+            Context and objectives
           </h2>
           <p>
-            Traditional high-performance windows rely on static coatings and
-            gas fills to manage heat transfer. Our project asked a different
-            question: what if a window could dynamically modulate radiative
-            heat exchange with the environment, adapting to different seasons
-            and climates while remaining manufacturable at scale?
+            Traditional high-performance windows typically rely on static
+            coatings, gas fills, and layered glazing to manage heat transfer.
+            This project explored a different idea: whether a window could
+            dynamically influence radiative heat exchange in a way that better
+            adapts to changing environmental conditions.
           </p>
           <p>
-            My role was to take this high-level idea and help translate it into
-            a feasible concept. I focused on understanding the current
-            state-of-the-art in dynamic glazing, mapping out the IP landscape,
-            and building early CAD models that captured how a Radiant Energy
-            Veil could be integrated into a multi-pane window system.
+            My role was to help translate that high-level idea into a more
+            concrete engineering concept. I focused on understanding the current
+            state of dynamic glazing technologies, identifying technical and IP
+            constraints, and creating early CAD concepts for how a Radiant
+            Energy Veil could be incorporated into a multi-pane window assembly.
           </p>
 
           <h2 className="mt-6 text-lg font-semibold tracking-tight">
-            Research &amp; concept development
+            Research and concept development
           </h2>
           <p>
-            I began with a structured literature and patent review on heat
-            transfer in windows: low-E coatings, spectrally selective films,
-            vacuum glazing, and active façade technologies. For each approach,
-            I tracked thermal performance, manufacturability, and potential
-            conflicts with our proposed concept.
+            I began with a structured literature and patent review covering
+            topics such as low-E coatings, spectrally selective films, vacuum
+            glazing, and active façade systems. For each approach, I looked at
+            performance tradeoffs, manufacturability, and how closely it
+            overlapped with the concept we were exploring.
           </p>
           <p>
-            This review helped us carve out a design space that was both
-            technically promising and distinct from existing patents. I
-            compiled my findings into internal briefs for the team, highlighting
-            where a Radiant Energy Veil could add value without duplicating
-            existing solutions.
+            This helped define a design space that was both technically
+            promising and meaningfully different from existing patented
+            solutions. I summarized the findings into internal briefs that
+            helped guide the team toward concepts that were more realistic from
+            both an engineering and commercialization perspective.
           </p>
         </div>
 
@@ -72,55 +88,54 @@ export default function RadiantEnergyVeilPage() {
               className="object-contain"
             />
           </div>
-          {/* if you add a second render later, drop it here */}
-          { <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
+
+          <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-neutral-200 bg-neutral">
             <Image
               src="/images/work/radiant-veil.png"
               alt="Detail render of Radiant Energy Veil concept"
               fill
               className="object-contain"
             />
-          </div> }
+          </div>
         </div>
       </section>
 
-      {/* CAD work + learnings + tech card */}
       <section className="grid gap-8 md:grid-cols-[1.7fr,1.3fr] items-start">
         <div className="space-y-4 text-sm md:text-base text-neutral-800 leading-relaxed">
           <h2 className="text-lg font-semibold tracking-tight">
-            CAD exploration &amp; iteration
+            CAD exploration and iteration
           </h2>
           <p>
-            Once we had a clear technical direction, I moved into CAD-driven
-            concept development. I modelled multiple window assemblies with
-            different layer orderings, support structures, and integration
-            strategies for the Radiant Energy Veil, paying attention to how
-            the concept would interact with spacers, seals, and framing.
+            Once the technical direction was clearer, I moved into CAD-driven
+            concept development. I modeled multiple window assembly variations
+            with different layer arrangements, support structures, and
+            integration strategies for the Radiant Energy Veil, while paying
+            attention to how the concept would interact with spacers, seals, and
+            framing.
           </p>
           <p>
-            Each iteration was evaluated on three axes: thermal performance
-            potential, manufacturability, and compatibility with existing
-            fabrication lines. I used exploded views and section cuts to make
-            design trade-offs easier to discuss with the research team and
-            industrial partners.
+            Each concept was evaluated against a mix of technical and practical
+            considerations, including thermal performance potential,
+            manufacturability, and compatibility with existing fabrication
+            approaches. I used section views and exploded assemblies to make the
+            tradeoffs easier to communicate during internal design discussions.
           </p>
 
           <h2 className="mt-6 text-lg font-semibold tracking-tight">
-            Takeaways
+            What I learned
           </h2>
           <p>
-            Even though the full design details are confidential, the project
-            had a big impact on how I think about energy-efficient products.
-            It forced me to connect theory—radiative heat transfer, material
-            properties, and IP constraints—with practical design decisions in
-            CAD.
+            Although the full technical details remain confidential, this
+            project had a big impact on how I think about engineering design. It
+            pushed me to connect heat transfer theory, material behavior, and IP
+            constraints with practical concept development in CAD.
           </p>
           <p>
-            The Radiant Energy Veil work also became a bridge into my later
-            AP2D projects on dynamic solar windows, where I moved from concept
-            design into simulation and performance analysis. Together, these
-            experiences solidified my interest in applying engineering design
-            to real sustainability problems.
+            It also became a foundation for my later work on dynamic solar
+            windows at AP2D, where I moved from early concept work into more
+            simulation-heavy performance analysis. Together, those experiences
+            strengthened my interest in engineering problems that sit at the
+            intersection of sustainability, design, and implementation.
           </p>
         </div>
 
@@ -130,21 +145,20 @@ export default function RadiantEnergyVeilPage() {
               What I did
             </h2>
             <ul className="space-y-1.5">
-              <li>Mapped patents and literature on dynamic &amp; high-performance glazing</li>
+              <li>Reviewed patents and literature on dynamic and high-performance glazing</li>
               <li>
-                Defined design constraints for integrating a Radiant Energy
-                Veil into multi-pane window stacks
+                Helped define design constraints for integrating a Radiant
+                Energy Veil into multi-pane window assemblies
               </li>
               <li>
-                Built and iterated multiple CAD concepts, from early sketches
-                to refined assembly models
+                Built and iterated CAD concepts from early layouts to refined
+                assembly models
               </li>
               <li>
-                Prepared visual assets (exploded views, section cuts) for
-                internal design reviews
+                Created exploded views and section cuts for internal reviews
               </li>
               <li>
-                Helped align research ideas with manufacturing and IP realities
+                Helped connect research ideas to manufacturing and IP realities
               </li>
             </ul>
           </div>
